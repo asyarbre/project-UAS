@@ -1,2 +1,2 @@
-# asyari-21240018
-Tugas Mata Kuliah Website Dinamis
+# Company profile 
+Project UAS mata kuliah UI/UX semester 3
