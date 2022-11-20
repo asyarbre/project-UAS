@@ -10,85 +10,180 @@
   </head>
   <body>
     <header>
-      <nav class="px-4 py-2.5">
-        <div
-          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
-        >
-          <a href="index.html" class="flex items-center">
-            <img src="src/img/logo.png" class="mr-3 h-6 md:h-9" alt="Logo" />
-            <span
-              class="self-center text-xl font-semibold whitespace-nowrap text-primary"
-              >Tokopedia</span
-            >
-          </a>
-          <div class="flex items-center lg:order-2">
-            <a
-              href="login.html"
-              target="_blank"
-              class="text-gray-800 border border-primary hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none"
-              >Masuk</a
-            >
-            <a
-              href="register.html"
-              target="_blank"
-              class="text-white bg-primary hover:bg-green-600 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none"
-              >Daftar</a
-            >
-          </div>
-          <div
-            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-            id="mobile-menu-2"
+      <nav
+        class="relative px-4 py-4 flex justify-between items-center bg-white mx-auto max-w-screen-2xl"
+      >
+        <a class="text-3xl font-bold leading-none flex" href="index.html">
+          <img src="src/img/logo.png" class="mr-3 h-6 md:h-9" alt="Logo" />
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap text-primary"
+            >Tokopedia</span
           >
-            <ul
-              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+        </a>
+        <div class="lg:hidden">
+          <button class="navbar-burger flex items-center text-gray-700 p-3">
+            <svg
+              class="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <li>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6"
+        >
+          <li class="mb-1">
+            <a
+              class="block p-4 font-semibold text-gray-700 hover:text-primary rounded"
+              href="index.html"
+              >Beranda</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 font-semibold text-gray-700 hover:text-primary rounded"
+              href="about.html"
+              >Tentang Kami</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 font-semibold text-gray-700 hover:text-primary rounded"
+              href="bisnis.html"
+              >Bisnis Kami</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 font-semibold text-gray-700 hover:text-primary rounded"
+              href="newsroom.html"
+              >Newsroom</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 font-semibold text-gray-700 hover:text-primary rounded"
+              href="gabung.html"
+              >Gabung</a
+            >
+          </li>
+          <li class="mb-1">
+            <a
+              class="block p-4 font-semibold text-primary rounded"
+              href="contact.html"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+        <a
+          class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 text-gray-800 border border-primary hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 text-sm font-bold rounded-xl"
+          href="login.html"
+          >Masuk</a
+        >
+        <a
+          class="hidden lg:inline-block py-2 px-6 bg-primary hover:bg-green-600 text-sm text-white font-bold rounded-xl transition duration-200"
+          href="register.html"
+          >Daftar</a
+        >
+      </nav>
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+        >
+          <div class="flex items-center mb-8">
+            <a
+              class="mr-auto text-3xl font-bold leading-none flex"
+              href="index.html"
+            >
+              <img src="src/img/logo.png" class="mr-3 h-6 md:h-9" alt="Logo" />
+              <span
+                class="self-center text-xl font-semibold whitespace-nowrap text-primary"
+                >Tokopedia</span
+              >
+            </a>
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
                 <a
+                  class="block p-4 text-sm font-semibold text-gray-700 hover:text-primary rounded"
                   href="index.html"
-                  class="block py-2 px-3 text-gray-700 hover:text-primary lg:p-0"
-                  aria-current="page"
                   >Beranda</a
                 >
               </li>
-              <li>
+              <li class="mb-1">
                 <a
+                  class="block p-4 text-sm font-semibold text-gray-700 hover:text-primary rounded"
                   href="about.html"
-                  class="block py-2 px-3 text-gray-700 hover:text-primary lg:p-0"
                   >Tentang Kami</a
                 >
               </li>
-              <li>
+              <li class="mb-1">
                 <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-700 hover:text-primary lg:p-0"
+                  class="block p-4 text-sm font-semibold text-gray-700 hover:text-primary rounded"
+                  href="bisnis.html"
                   >Bisnis Kami</a
                 >
               </li>
-              <li>
+              <li class="mb-1">
                 <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-700 hover:text-primary lg:p-0"
+                  class="block p-4 text-sm font-semibold text-gray-700 hover:text-primary rounded"
+                  href="newsroom.html"
                   >Newsroom</a
                 >
               </li>
-              <li>
+              <li class="mb-1">
                 <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-700 hover:text-primary lg:p-0"
+                  class="block p-4 text-sm font-semibold text-gray-700 hover:text-primary rounded"
+                  href="gabung.html"
                   >Gabung</a
                 >
               </li>
-              <li>
+              <li class="mb-1">
                 <a
+                  class="block p-4 text-sm font-semibold text-primary rounded"
                   href="contact.html"
-                  class="block py-2 px-3 text-primary lg:p-0"
                   >Kontak</a
                 >
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+          <div class="mt-auto">
+            <div class="pt-6">
+              <a
+                class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold text-gray-800 border border-primary hover:bg-gray-50 focus:ring-4 focus:ring-gray-300rounded-xl"
+                href="#"
+                >Sign in</a
+              >
+
+              <a
+                class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-primary hover:bg-green-500 rounded-xl"
+                href="#"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <section class="bg-gray-50 py-20">
       <hr class="bg-primary h-0.5 w-10 mx-auto" />
@@ -180,17 +275,17 @@
         >
           <a href="https://goo.gl/maps/HxQE3tvNEuR2QJFg7" target="_blank">
             <img src="src/img/maps-2.jpg" alt="lokasi-1" width="w-full" />
-          <div class="flex px-4 mt-5">
-            <img src="src/img/maps.svg" alt="maps-icon" class="rounded-xl" />
-            <p class="my-auto ml-3 font-semibold text-gray-700 text-lg">
-              Tokopedia Tower
+            <div class="flex px-4 mt-5">
+              <img src="src/img/maps.svg" alt="maps-icon" class="rounded-xl" />
+              <p class="my-auto ml-3 font-semibold text-gray-700 text-lg">
+                Tokopedia Tower
+              </p>
+            </div>
+            <p class="mx-3 my-3 px-5 text-sm leading-loose">
+              Tokopedia Tower Ciputra World 2, Jl. Prof. DR. Satrio No.Kav. 11,
+              RT.3/RW.3, Karet Semanggi, Setia Budi, Kota Jakarta Selatan,
+              Daerah Khusus Ibukota Jakarta 12950
             </p>
-          </div>
-          <p class="mx-3 my-3 px-5 text-sm leading-loose">
-            Tokopedia Tower Ciputra World 2, Jl. Prof. DR. Satrio No.Kav. 11,
-            RT.3/RW.3, Karet Semanggi, Setia Budi, Kota Jakarta Selatan, Daerah
-            Khusus Ibukota Jakarta 12950
-          </p>
           </a>
         </div>
       </div>
@@ -214,17 +309,17 @@
             <li
               class="my-2 text-gray-600 hover:text-primary text-md sm:text-lg"
             >
-              <a href="#">Bisnis Kami</a>
+              <a href="bisnis.html">Bisnis Kami</a>
             </li>
             <li
               class="my-2 text-gray-600 hover:text-primary text-md sm:text-lg"
             >
-              <a href="#">Newsroom</a>
+              <a href="newsroom.html">Newsroom</a>
             </li>
             <li
               class="my-2 text-gray-600 hover:text-primary text-md sm:text-lg"
             >
-              <a href="#">Gabung</a>
+              <a href="gabung.html">Gabung</a>
             </li>
             <li
               class="my-2 text-gray-600 hover:text-primary text-md sm:text-lg"
@@ -233,7 +328,7 @@
             </li>
           </ul>
         </div>
-        <div class="m-3 my-auto">
+        <div class="m-3 my-auto hidden lg:block">
           <p class="text-gray-600 font-medium">Keamanan Privasi</p>
           <div class="flex flex-wrap mt-4 space-x-2">
             <a
@@ -270,12 +365,18 @@
             <a
               href="https://play.google.com/store/apps/details?id=com.tokopedia.tkpd&hl=en"
               target="_blank"
-              ><img src="src/img/playstore.png" alt="playstore" class="w-28"
+              ><img
+                src="src/img/playstore.png"
+                alt="playstore"
+                class="w-20 md:w-28"
             /></a>
             <a
               href="https://apps.apple.com/us/app/tokopedia-jual-beli-online/id1001394201"
               target="_blank"
-              ><img src="src/img/appstore.png" alt="appstore" class="w-28"
+              ><img
+                src="src/img/appstore.png"
+                alt="appstore"
+                class="w-20 md:w-28"
             /></a>
           </div>
         </div>
@@ -305,5 +406,6 @@
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
