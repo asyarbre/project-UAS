@@ -1,0 +1,16 @@
+{
+  "name": "project-uiux",
+  "version": "1.0.0",
+  "description": "Project UAS mata kuliah UI/UX",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
